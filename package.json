@@ -1,11 +1,11 @@
 {
-  "name": "nodebb-theme-vanilla",
-  "version": "11.1.15",
-  "description": "Vanilla theme for NodeBB",
+  "name": "nodebb-theme-ativosvanilla",
+  "version": "0.1",
+  "description": "Ativos Vanilla theme for NodeBB",
   "main": "theme.less",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NodeBB/nodebb-theme-vanilla"
+    "url": "https://github.com/amosin/nodebb-theme-vanilla"
   },
   "keywords": [
     "nodebb",
