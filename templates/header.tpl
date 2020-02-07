@@ -35,7 +35,7 @@
 </head>
 
 <body class="{bodyClass} skin-<!-- IF bootswatchSkin -->{bootswatchSkin}<!-- ELSE -->noskin<!-- END -->">
-	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" id="header-menu" component="navbar">
+	<div class="navbar navbar-inverse navbar-fixed-top header" role="navigation" style="background-color: coral;" id="header-menu" component="navbar">
 		<div class="container">
 			<!-- IMPORT partials/menu.tpl -->
 		</div>
