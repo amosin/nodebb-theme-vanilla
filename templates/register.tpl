@@ -1,5 +1,4 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
-<!-- IMPORT partials/account/custom_fields_flex.tpl -->
 
 <div class="row register">
 	<div class="{register_window:spansize}">
@@ -41,6 +40,18 @@
 						<span class="register-feedback" id="password-confirm-notify"></span>
 					</div>
 				</div>
+     				<br />
+                                <div class="form-group">
+                                        <label for="ethereumwallet" class="col-lg-4 control-label">[[register:ethereumwallet]]</label>
+                                        <div class="col-lg-8">
+                                                <input class="form-control" type="text" placeholder="[[register:ethereumwallet]]" name="ethereumwallet" id="ethereumwallet" />
+                                                <div style="height: 100px;">
+                                                <a id="connectmetamask" href="#"><img src="{relative_path}/assets/images/metamask_logo.png" class="img-thumbnail img-fluidi rounded mx-auto d-block" alt="Connect with Metamask" style="width: 200px;"></a>
+                                                </div>
+                                                <span class="ethereumwallet-feedback" id="ethereumwallet-notify"></span>
+                                                <span class="help-block">[[register:help.ethereumwallet]]</span>
+                                        </div>
+                                </div>
 
 				{{{each regFormEntry}}}
 				<div class="form-group">
