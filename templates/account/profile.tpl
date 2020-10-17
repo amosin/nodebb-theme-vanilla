@@ -173,8 +173,9 @@
       <div class="modal-body">
           <p>You are about to send a TIP to user <span class="account-username"> {username}</span></p>
           <form>
-           <label for="ethValue" class="col-lg-2 control-label">Enter ETH Value</label>
+           <label for="ethValue" class="col-lg-2 control-label">ETH Value</label>
            <input id="ethValue" type="text" placeholder="0.005">
+           <br />
           </form>
       </div>
       <div class="modal-footer">
