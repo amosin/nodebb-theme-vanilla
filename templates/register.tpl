@@ -1,4 +1,5 @@
 <!-- IMPORT partials/breadcrumbs.tpl -->
+<!-- IMPORT partials/account/custom_fields_flex.tpl -->
 
 <div class="row register">
 	<div class="{register_window:spansize}">

@@ -13,6 +13,7 @@
 					<!-- IF allowProfilePicture -->
 					<a id="changePictureBtn" href="#" class="list-group-item">[[user:change_picture]]</a>
 					<!-- ENDIF allowProfilePicture -->
+
 					<!-- IF !username:disableEdit -->
 					<a href="{config.relative_path}/user/{userslug}/edit/username" class="list-group-item">[[user:change_username]]</a>
 					<!-- ENDIF !username:disableEdit -->
@@ -109,6 +110,15 @@
 					</div>
 					<!-- ENDIF !disableSignatures -->
 					<!-- ENDIF allowSignature -->
+                                        <div class="control-group">
+                                                <label class="control-label" for="inputEthereumWallet">[[user:ethereumwallet]]</label> <small><label id="ethereumWalletCharCountLeft"></label></small>
+						<div style="height: 100px;">
+ 						<a component="account/metamask" id="connectmetamask" href="#"><img src="{relative_path}/assets/images/metamask_logo.png" class="img-thumbnail img-fluidi rounded mx-auto d-block" alt="Connect with Metamask" style="width: 200px;"></a>
+						</div>
+                                                <div class="controls">
+                                                        <input class="form-control" type="text" id="inputEthereumWallet" placeholder="[[user:ethereumwallet]]" value="{ethereumwallet}">
+                                                </div>
+                                        </div>
 
 					<input type="hidden" id="inputUID" value="{uid}"><br />
 

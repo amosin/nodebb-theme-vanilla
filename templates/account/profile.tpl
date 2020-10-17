@@ -1,6 +1,5 @@
 <div class="account">
 	<!-- IMPORT partials/account_menu.tpl -->
-
 	<div class="row">
 		<div class="col-md-5 account-block">
 
@@ -28,6 +27,11 @@
 							<!-- ENDIF !config.disableChat -->
  							<a component="account/follow" href="#" class="btn btn-success btn-sm <!-- IF isFollowing -->hide<!-- ENDIF isFollowing -->">[[user:follow]]</a>
  							<a component="account/unfollow" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
+
+
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+							  [[user:tip]]
+							</button>
 
 							<!-- IF canBan -->
 							<br/><br/>
@@ -104,8 +108,7 @@
 					<span class="account-bio-label">[[user:age]]</span>
 					<span class="account-bio-value">{age}</span>
 					<!-- ENDIF age -->
-
-
+					
 					<span class="account-bio-label">[[user:followers]]</span>
 					<span class="human-readable-number account-bio-value" title="{followerCount}">{followerCount}</span>
 
@@ -156,5 +159,30 @@
 
 	<br/>
 	<div id="user-action-alert" class="alert alert-success hide"></div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Send Crypto Tip</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>You are about to send a TIP to user <span class="account-username"> {username}</span></p>
+          <form>
+           <label for="ethValue" class="col-lg-2 control-label">Enter ETH Value</label>
+           <input id="ethValue" type="text" placeholder="0.005">
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <a component="account/tip" id="sendcrypto" href="#" class="btn btn-primary">Send</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 </div>

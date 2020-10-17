@@ -25,6 +25,7 @@
 			user: JSON.parse('{{userJSON}}')
 		};
 	</script>
+        <script src="/social/assets/vendor/web3/web3.min.js"></script>
 
 	<!-- IF useCustomHTML -->
 	{{customHTML}}
