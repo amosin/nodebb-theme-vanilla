@@ -65,11 +65,16 @@
 							<button component="post/bookmark" data-bookmarked="{posts.bookmarked}" class="bookmark-tooltip btn btn-sm btn-default <!-- IF posts.bookmarked --> btn-warning <!-- ENDIF posts.bookmarked -->" type="button">
 								<span class="bookmark-text">[[topic:bookmark]]</span>
 								<span component="post/bookmark-count" class="bookmarkCount" data-bookmarks="{posts.bookmarks}">{posts.bookmarks}</span>&nbsp;
-
 								<i component="post/bookmark/on" class="fa fa-heart <!-- IF !posts.bookmarked -->hidden<!-- ENDIF !posts.bookmarked -->"></i>
 								<i component="post/bookmark/off" class="fa fa-heart-o <!-- IF posts.bookmarked -->hidden<!-- ENDIF posts.bookmarked -->"></i>
 							</button>
+
+                            <button data-toggle="modal" data-target="#tipModalCenter" class="bookmark-tooltip open-sendTipModal btn btn-sm btn-default" type="button" data-username="{posts.user.username}" data-wallet="{posts.user.ethereumwallet}">
+								<span class="bookmark-text">[[user:tip]]</span>
+							</button>
 						</div>
+
+
 
 						<!-- IF !reputation:disabled -->
 						<div class="btn-group">
@@ -124,6 +129,33 @@
 			</li>
 		{{{end}}}
 	</ul>
+<!-- Modal -->
+<div class="modal fade" id="tipModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Send Crypto Tip</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p>You are about to send a TIP to user:
+          <span id="postUsername">NO ONE!</span></p>
+          <p>Wallet address: <span id="postEthereumWallet">Not configured yet. :-(</span></p>
+          <form onsubmit="return false"> 
+           <label for="ethValue" class="col-lg-2 control-label">ETH Value</label>
+           <input id="ethValue" type="text" placeholder="0.005">
+           <br />
+          </form>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
+        <a component="account/tip" type="submit" id="sendcrypto" href="#" class="btn btn-primary">Send</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<div class="well col-md-11 col-xs-12 pull-right post-bar">
 		<!-- IMPORT partials/post_bar.tpl -->
