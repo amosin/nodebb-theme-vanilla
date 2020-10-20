@@ -29,7 +29,7 @@
  							<a component="account/unfollow" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
 
 
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendCryptoModalCenter">
 							  [[user:tip]]
 							</button>
 
@@ -161,26 +161,27 @@
 	<div id="user-action-alert" class="alert alert-success hide"></div>
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+<div class="modal fade" id="sendCryptoModalCenter" tabindex="-1" role="dialog" aria-labelledby="sendCryptoModalCenter" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Send Crypto Tip</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">[[topic:send_crypto_tip]]</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-          <p>You are about to send a TIP to user <span class="account-username"> {username}</span></p>
-          <form>
-           <label for="ethValue" class="col-lg-2 control-label">ETH Value</label>
+          <p>[[topic:message_about_to_send]]  <span class="account-username"> {username}</span></p>
+          <p>[[topic:wallet_address]]<span id="postEthereumWallet">[[topic:user_no_config_wallet]]</span></p>
+          <form onsubmit="return false">
+           <label for="ethValue" class="col-lg-2 control-label">[[topic:crypto_amount_to_send]]</label>
            <input id="ethValue" type="text" placeholder="0.005">
            <br />
           </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <a component="account/tip" id="sendcrypto" href="#" class="btn btn-primary">Send</a>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">[[topic:modal_close]]</button>
+        <a component="account/tip" id="sendcrypto" href="#" class="btn btn-primary">[[topic:modal_send]]</a>
       </div>
     </div>
   </div>

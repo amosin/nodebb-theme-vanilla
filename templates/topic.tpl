@@ -134,24 +134,24 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Send Crypto Tip</h5>
+        <h5 class="modal-title" id="exampleModalLongTitle">[[topic:send_crypto_tip]]</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-          <p>You are about to send a TIP to user:
-          <span id="postUsername">NO ONE!</span></p>
-          <p>Wallet address: <span id="postEthereumWallet">Not configured yet. :-(</span></p>
+          <p>[[topic:message_about_to_send]]
+          <span id="postUsername">[[topic:no_crypto_user]]  </span></p>
+          <p>[[topic:wallet_address]]<span id="postEthereumWallet">[[topic:user_no_config_wallet]]</span></p>
           <form onsubmit="return false"> 
-           <label for="ethValue" class="col-lg-2 control-label">ETH Value</label>
+           <label for="ethValue" class="col-lg-2 control-label">[[topic:crypto_amount_to_send]] </label>
            <input id="ethValue" type="text" placeholder="0.005">
            <br />
           </form>
       </div>
       <div class="modal-footer">
-        <a type="button" class="btn btn-secondary" data-dismiss="modal">Close</a>
-        <a component="account/tip" type="submit" id="sendcrypto" href="#" class="btn btn-primary">Send</a>
+        <a type="button" class="btn btn-secondary" data-dismiss="modal">[[topic:modal_close]]</a>
+        <a component="account/tip" type="submit" id="sendcrypto" href="#" class="btn btn-primary">[[topic:modal_send]]</a>
       </div>
     </div>
   </div>
