@@ -29,7 +29,7 @@
  							<a component="account/unfollow" href="#" class="btn btn-warning btn-sm <!-- IF !isFollowing -->hide<!-- ENDIF !isFollowing -->">[[user:unfollow]]</a>
 
 
-							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sendCryptoModalCenter">
+							<button type="button" class="btn btn-primary open-sendTipModal" data-toggle="modal" data-target="#sendCryptoModalCenter">
 							  [[user:tip]]
 							</button>
 
