@@ -34,6 +34,7 @@
 				<li><a href="{config.relative_path}/user/{userslug}/followers"><i class="fa fa-fw fa-users"></i> [[user:followers]]</a></li>
 				<!-- IF showHidden -->
 				<li><a href="{config.relative_path}/user/{userslug}/blocks"><i class="fa fa-fw fa-ban"></i> [[user:blocks]]</a></li>
+				<li><a href="{config.relative_path}/user/{userslug}/tips"><i class="fa fa-fw fa-btc"></i> [[user:tips]]</a></li>
 				<!-- ENDIF showHidden -->
 				<li class="divider"></li>
 				<li><a href="{config.relative_path}/user/{userslug}/topics"><i class="fa fa-fw fa-book"></i> [[global:topics]]</a></li>
