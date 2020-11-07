@@ -124,7 +124,7 @@
 							</li>
 							<li role="presentation" class="divider"></li>
                             <li>
-								<a href="{config.relative_path}/user/{user.username}/tips">
+								<a href="{config.relative_path}/user/{user.userslug}/tips">
 									<i class="fa fa-fw fa-btc"></i><span> [[user:tips]]</span>
 								</a>
 							</li>
