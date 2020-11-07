@@ -1,7 +1,6 @@
 <div class="account">
   <!-- IMPORT partials/account_menu.tpl -->
-
-  <!-- IF tips.length -->
+<div class="alert alert-warning text-center"<!-- IF tips.length --> style="display: none;"<!-- END -->>[[user:has_no_tips]]</div>
   <div class="row">
     <div class="col-xs-12 col-md-12">
       <p class="lead">[[user:tips.description]]</p>
@@ -9,11 +8,11 @@
       <table class="table">
         <thead>
         <tr>
-            <th scope="col">From</th>
-            <th scope="col">Date</th>
-            <th scope="col">Amount</th>
-            <th scope="col">Coin</th>
-            <th scope="col">Transaction</th>
+            <th scope="col">[[tips:from]]</th>
+            <th scope="col">[[tips:date]]</th>
+            <th scope="col">[[tips:amount]]</th>
+            <th scope="col">[[tips:coin]]</th>
+            <th scope="col">[[tips:transaction]]</th>
         </tr>
         </thead>
         <tbody>
@@ -31,5 +30,4 @@
 
     </div>
   </div>
-  <!-- ENDIF tips.length -->
 </div>

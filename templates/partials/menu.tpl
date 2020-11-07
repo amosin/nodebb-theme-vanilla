@@ -122,6 +122,12 @@
 									<i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
 								</a>
 							</li>
+							<li role="presentation" class="divider"></li>
+                            <li>
+								<a href="{config.relative_path}/user/{user.username}/tips">
+									<i class="fa fa-fw fa-btc"></i><span> [[user:tips]]</span>
+								</a>
+							</li>
 							<!-- IF showModMenu -->
 							<li role="presentation" class="divider"></li>
 							<li class="dropdown-header">[[pages:moderator-tools]]</li>
