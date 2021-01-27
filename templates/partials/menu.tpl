@@ -40,11 +40,13 @@
 					{{{end}}}
 
 					<li class="">
-                        <div id="prepare">
-                            <button font-size="14" size="36" class="sc-AxjAm caxfjd" id="btn-connect">Unlock Wallet</button>
-                        </div>
-                        <div id="connected2" style="display: none">
-                         <button font-size="14" size="36" class="sc-AxjAm caxfjd"  id="btn-disconnect"> <span id="selected-account-short"></span></button>
+                        <div class="walletbutton">
+                          <div id="prepare">
+                              <button font-size="14" size="36" class="wallet-button" id="btn-connect">🔓 Unlock Wallet</button>
+                          </div>
+                          <div id="connected2" style="display: none">
+                              <button font-size="14" size="36" class="wallet-button unlocked"  id="btn-disconnect"> <span id="selected-account-short"></span></button>
+                          </div>
                         </div>
 					</li>
 
