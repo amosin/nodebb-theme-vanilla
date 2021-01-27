@@ -38,6 +38,17 @@
 					</li>
 					<!-- ENDIF function.displayMenuItem -->
 					{{{end}}}
+
+					<li class="">
+                        <div id="prepare">
+                            <button font-size="14" size="36" class="sc-AxjAm caxfjd" id="btn-connect">Unlock Wallet</button>
+                        </div>
+                        <div id="connected2" style="display: none">
+                         <button font-size="14" size="36" class="sc-AxjAm caxfjd"  id="btn-disconnect"> <span id="selected-account-short"></span></button>
+                        </div>
+					</li>
+
+
 				</ul>
 
 				<!-- IF config.loggedIn -->
@@ -120,6 +131,12 @@
 							<li>
 								<a href="#" class="user-status" data-status="offline">
 									<i class="fa fa-fw fa-circle status offline"></i><span> [[global:invisible]]</span>
+								</a>
+							</li>
+							<li role="presentation" class="divider"></li>
+                            <li>
+								<a href="{config.relative_path}/user/{user.userslug}/tips">
+									<i class="fa fa-fw fa-btc"></i><span> [[user:tips]]</span>
 								</a>
 							</li>
 							<!-- IF showModMenu -->

@@ -63,5 +63,5 @@
     "type": "git",
     "url": "git+https://github.com/NodeBB/nodebb-theme-vanilla.git"
   },
-  "version": "11.1.16"
+  "version": "11.1.16-0.3"
 }
